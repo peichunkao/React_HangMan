@@ -42,7 +42,7 @@ class Hangman extends Component {
     let ltr = evt.target.value;
     this.setState(st => ({
       guessed: st.guessed.add(ltr),
-      nWrong: st.nWrong + (st.answer.includes(ltr) ? 0 : "1")
+      nWrong: st.nWrong + (st.answer.includes(ltr) ? 0 : 1)
     }));
   }
 
